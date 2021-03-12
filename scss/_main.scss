@@ -1,0 +1,57 @@
+@mixin btn($color-bg, $color-hover, $color-text) {
+  border: none;
+  outline: none;
+  background-color: #{$color-bg};
+  color: #{$color-text};
+  cursor: pointer;
+
+  &:hover {
+    background-color: #{$color-hover};
+  }
+}
+
+.header {
+  height: 10rem;
+  padding: 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+
+  &__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+  }
+
+  &__login {
+    font-size: 1.2rem;
+  }
+}
+
+.welcomer {
+  width: 500px;
+  height: calc(100% - 10rem);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__heading {
+    font-size: 3.5rem;
+  }
+
+  &__btn {
+    @include btn($button-bg, $button-hover, $button-text);
+    padding: 1em 2em;
+    font-size: 1rem;
+
+    &--transparent {
+      @include btn(transparent, transparent, #000);
+
+      &:hover {
+        color: $button-hover;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'colors';
+@import 'background';
+@import 'main';
+@import 'aside';
+
+.wrapper {
+  @extend %background;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
