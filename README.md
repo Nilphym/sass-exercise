@@ -1,4 +1,4 @@
-## Website made in an hour to train sass skills.  
+## Desktop website made in an hour to train sass skills.  
 Demo: https://nilphym.github.io/sass-exercise/  
 
 ### Disclaimer
